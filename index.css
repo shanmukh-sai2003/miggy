@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@600&family=Poppins:wght@200;300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,400&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+a {
+    text-decoration: none;
+    color: #282c3f;
+}
+
+.header {
+    background-color: #fff;
+    box-shadow: 0 15px 40px -20px rgba(40,44,63,.15);
+    height: 100px;
+    color: #282c3f;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 0px 100px;
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img {
+    width: 100px;
+    border-radius: 100%;
+}
+
+
+.header  .nav-list {
+    display: flex;
+    flex: 1;
+    height: 100%;
+    flex-direction: row-reverse;
+    align-items: center;
+    font-size: 1.25rem;
+    
+}
+
+.header  .nav-list li {
+    list-style: none;
+    margin-right: 60px;
+    cursor: pointer;
+}
+
+.cart {
+    position: relative;
+}
+
+.cart-icon {
+    width: 70px;
+}
+
+.cart-counter {
+    position: absolute;
+    left: 29px;
+    top: 23px;
+}
+
+.card-list {
+    margin: 50px 200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    width: 250px;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(0.95);
+    transform-origin: center center 0px;
+    transition: all 0.1s ease-in 0s;
+}
+ 
+.card .resturant-img img {
+    width: 100%;
+    height: 170px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.card .resturant-desc {
+    margin-top: 10px;
+    margin-left: 12px;
+}
+
+.card .resturant-desc h3 {
+    color: rgba(2, 6, 12, 0.75);
+}
+
+.card .resturant-desc .rating {
+    color: rgba(2, 6, 12, 0.75);
+    font-weight: 300;
+}
+
+.card .resturant-desc p {
+    color: rgba(2, 6, 12, 0.6);
+    font-weight: 200;
+    margin-bottom: 5px;
+}
+
+.shimmer-card {
+    width: 250px;
+    height: 170px;
+    border-radius: 16px;
+    background-color: #f0f0f0;
+}
+
+.top-rated {
+    outline: none;
+    background-color: white;
+    padding: 15px 10px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.filters {
+    flex-basis: 100vw;
+}
+
+.search-bar {
+    margin: 40px 200px;
+}
+
+.search-bar input {
+    padding: 10px 10px;
+    width: 20vw;
+    margin-right: 20px;
+}
+
+.search-bar input:focus {
+    outline: none;
+}
+
+.search-bar .search-btn {
+    padding: 10px;
+    background-color: white;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.restaurant-menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.restaurant-menu .menu-card {
+    width: 50vw;
+}
+
+.restaurant-details .details .detail{
+    color: gray;
+}
+
+.restaurant-details .details {
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.restaurant-details .details .rating {
+    text-align: right;
+}
+
+.restaurant-details hr {
+    color: gray;
+    border: none;
+    border-top: 2px dotted gray;
+    background-color: white;
+    margin: 15px 0px;
+}
+
+.menu-item-category {
+    padding: 15px 0px;
+    border-bottom: 1px solid lightgray;  
+}
+
+.menu-item-category .category-title {
+    font-size: large;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer; 
+}
+
+.category-separator {
+    height: 10px;
+    background-color: #f1f1f6;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.menu-without-category .category-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.menu-item-card {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid lightgray;
+}
+
+
+.menu-item-card .item-description {
+    margin-top: 20px;
+    font-size: small;
+    color: lightgray;
+}
+
+.menu-item-card .item-image {
+    width: 118px;
+    height: 96px;
+    border-radius: 12px;
+}
+
+.item-right {
+    text-align: right;
+    position: relative;
+}
+
+.add-btn {
+    position: absolute;
+    bottom: 0px;
+    background-color: white;
+    color: green;
+    padding: 10px 20px;
+    border-radius: 12px;
+    right: 25px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 3px 8px #e9e9eb;
+}
+
+.add-btn:hover {
+    box-shadow: 0 2px 8px #d4d5d9;
+}
+
+.cart-btns {
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+    background-color: white;
+    color: green;
+    display: inline-block;
+    border-radius: 12px;
+    width: 96px;
+    height: 36px;
+    cursor: pointer;
+    box-shadow: 0 3px 8px #e9e9eb;
+}
+
+.cart-btns:hover {
+    box-shadow: 0 2px 8px #d4d5d9;
+}
+
+.cart-btns > * {
+    width: 33%;
+    height: 100%;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    color: green;
+    text-align: center;
+}
+
+.remove-btn {
+    border-radius: 12px 0px 0px 12px;
+}
+
+.plus-btn {
+    border-radius: 0px 12px 12px 0px;
+}
+
+.cart-page {
+    display: flex;
+    justify-content: center;
+}
+
+#cart-item {
+    width: 50vw;
+}
+
+.empty-cart {
+    text-align: center;
+}
+
+.empty-cart img {
+    width: 300px;
+    margin: 50px 0px 20px 0px;
+}
